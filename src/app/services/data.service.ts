@@ -7,7 +7,7 @@ import { of } from 'rxjs';
 export class DataService {
   
 
-  dataUser=[{id:1,name:'Daniel Catalin',img:'../images/perfil.jpg',email:'daniel.catalin@outlook.es',phone:"+34642412483",
+  dataUser=[{id:1,name:'Daniel Catalin',img:'../assets/images/perfil.jpg',email:'daniel.catalin@outlook.es',phone:"+34642412483",
              location:'Madrid, MAD',city:"Coslada",street:'Private info',interactions:'10',
              distance:"12,9 km",time:"43 min",price:"34,20EUR",energy:"12,4 kwh"},
              
