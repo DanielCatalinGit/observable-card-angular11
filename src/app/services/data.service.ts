@@ -5,6 +5,7 @@ import { of } from 'rxjs';
   providedIn: 'root'
 })
 export class DataService {
+  
 
   dataUser=[{id:1,name:'Daniel Catalin',img:'../images/perfil.jpg',email:'daniel.catalin@outlook.es',phone:"+34642412483",
              location:'Madrid, MAD',city:"Coslada",street:'Private info',interactions:'10',
@@ -17,7 +18,8 @@ export class DataService {
 
   constructor() { }
 
-  getDataUser(){
+  /* Get Method for return info from dataUser array, used into CardComponent to subscribe and HTML binding */
+  get(){
     return of(this.dataUser);
   }
 }

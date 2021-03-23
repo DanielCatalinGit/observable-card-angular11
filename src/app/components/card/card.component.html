@@ -1,32 +1,34 @@
-<ul>
-  <li>
-    <main>
-      <div>
-        <section>
-          <h4>passenger info</h4>
-          <div>
-              <div>
-                  <div>
-                  </div>
-              </div>
+<ul class="wrap">
+  <!-- Show data info variable of  loop(bucle)-->
+  <li *ngFor="let userData of userDatas">
+    <main class="card">
+      <div class="card__grid">
+        <section class="info">
+          <h4 class="info__title">passenger info</h4>
+          <div class="info__profile">
+            <div class="info__profile--img"></div>
+            <div class="info__profile--user">
+                <h6>{{ userData.name }}</h6>
+                <small>{{ userData.interactions }} interactions</small>
+            </div>
           </div>
           <div>
-              <p>email</p>
-              <p>phone</p>
-              <p>location</p>
+            <p>email</p>
+            <p>phone</p>
+            <p>location</p>
           </div>
         </section>
         <section>
-            <div>
-                <label>information</label>
-                <input type="checkbox" >
-            </div>
-            <div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
+          <div>
+            <label>information</label>
+            <input type="checkbox" />
+          </div>
+          <div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
         </section>
       </div>
       <aside>
