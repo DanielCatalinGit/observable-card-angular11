@@ -26,6 +26,15 @@ export class CardComponent implements OnInit {
     })
   }
 
-  
+  hide=()=>{
+    if(this.show===true ){
+
+      this.show=false;
+      this.action="Show"
+    } else if (this.show===false){
+      this.show=true;
+      this.action="Hide"
+    }
+  }
 
 }

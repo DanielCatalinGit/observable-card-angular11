@@ -8,11 +8,11 @@ export class DataService {
   
 
   dataUser=[{id:1,name:'Daniel Catalin',img:'../assets/images/perfil.jpg',email:'daniel.catalin@outlook.es',phone:"+34642412483",
-             location:'Madrid, MAD',city:"Coslada",street:'Private info',interactions:'10',
+             location:'Madrid, MAD',city:"Coslada",street:'San Pablo',city1:'Getafe',street1:'Jose Martinez',interactions:'10',
              distance:"12,9 km",time:"43 min",price:"34,20EUR",energy:"12,4 kwh"},
              
              {id:2,name:'Mona Lisa',img:'../images/mona.jpg',email:'mona.lisa@outlook.es',phone:"+55534124222",
-             location:'Manhattan, NY',city:"Chicago",street:'Barbara Street',interactions:'8',
+             location:'Manhattan, NY',city:"Chicago",street:'Barbara Street',city1:'Alcala de Henares',street1:'Pintor Rosales',interactions:'8',
              distance:"9,3 km",time:"31 min",price:"25,5EUR",energy:"10,4 kwh"}
             ];
 

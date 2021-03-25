@@ -62,6 +62,7 @@
             height: 30px;
             border-radius: 50%;
             margin-right: 8px;
+            background-image: url('../../../assets/images/perfil.jpg');
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
@@ -252,12 +253,14 @@
 }
 
 .divVisa {
+    background-image: url('../../../assets/images/visa1.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
 .divPaypal {
+    background-image: url('../../../assets/images/paypal.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -265,12 +268,14 @@
 }
 
 .divPay {
+    background-image: url('../../../assets/images/payApple.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
 }
 
 .divMaster {
+    background-image: url('../../../assets/images/masterCard.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;

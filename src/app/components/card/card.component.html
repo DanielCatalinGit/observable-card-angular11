@@ -1,47 +1,80 @@
 <ul class="wrap">
-  <!-- Show data info variable of  loop(bucle)-->
-  <li *ngFor="let userData of userDatas">
-    <main class="card">
-      <div class="card__grid">
-        <section class="info">
-          <h4 class="info__title">passenger info</h4>
-          <div class="info__profile">
-            <div class="info__profile--img"></div>
-            <div class="info__profile--user">
-                <h6>{{ userData.name }}</h6>
-                <small>{{ userData.interactions }} interactions</small>
-            </div>
+    <li *ngFor="let userData of userDatas">
+        <main class="card">
+            <div class="card__grid">
+                <section class="info">
+                    <h4 class="info__title">passenger info</h4>
+                    <div class="info__profile">
+                        <div class="info__profile--img"></div>
+                        <div class="info__profile--user">
+                            <h6>{{ userData.name }}</h6>
+                            <small>{{ userData.interactions }} interactions</small>
+                        </div>
+                    </div>
+                    <div class="info__data">
+                        <p>email</p>
+                        <span>{{ userData.email }}</span>
+                        <p>phone</p>
+                        <span>{{ userData.phone }}</span>
+                        <p>location</p>
+                        <span>{{ userData.location }}</span>
+                    </div>
+                </section>
+                <section class="payment">
+                    <div class="payment__hide form-check form-switch">
+                        <label class="form-check-label" for="flexSwitchCheckDefault">{{ action }} information</label
+            >
+            <input
+              class="form-check-input"
+              type="checkbox"
+              id="flexSwitchCheckDefault"
+              (change)="hide()"
+            />
           </div>
-          <div>
-            <p>email</p>
-            <span>{{ userData.email }}</span>
-            <p>phone</p>
-            <span>{{ userData.phone }}</span>
-            <p>location</p>
-            <span>{{ userData.location }}</span>
-          </div>
-        </section>
-        <section>
-          <div>
-            <label>information</label>
-            <input type="checkbox" />
-          </div>
-          <div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+          <div class="payment__method" *ngIf="show">
+            <div class="divImg divPaypal"></div>
+            <div class="divImg divVisa"></div>
+            <div class="divImg divMaster"></div>
+            <div class="divImg divPay"></div>
           </div>
         </section>
       </div>
-      <aside>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+      <aside class="trip">
+        <div class="trip__route">
+          <div class="trip__route--icons">
+            <i class="fas fa-check-circle animate__flip"></i>
+            <span class="line"></span>
+            <i class="fas fa-map-marker-alt animate__flip"></i>
+          </div>
+          <div class="trip__route--address">
+            <div>
+              <span>{{ userData.city }}</span>
+              <p>{{ userData.street }}</p>
+            </div>
+            <div>
+              <span>{{ userData.city1 }}</span>
+              <p>{{ userData.street1 }}</p>
+            </div>
+          </div>
+        </div>
+        <div class="trip__data">
+          <div class="trip__data--distance">
+            <span>{{ userData.distance }}</span>
+            <p>distance</p>
+          </div>
+          <div class="trip__data--time">
+            <span>{{ userData.time }}</span>
+            <p>time</p>
+          </div>
+          <div class="trip__data--price">
+            <span>{{ userData.price }}</span>
+            <p>price</p>
+          </div>
+          <div class="trip__data--energy">
+            <span>{{ userData.energy }}</span>
+            <p>energy</p>
+          </div>
+        </div>
       </aside>
     </main>
   </li>
